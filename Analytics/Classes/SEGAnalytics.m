@@ -69,7 +69,7 @@ static SEGAnalytics *__sharedInstance = nil;
             }
         }
         [nc addObserver:self selector:@selector(_applicationWillEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
-
+    SEGLog(@"-=-=-=-=-=-=-=-=-= Add observers");
         if (configuration.recordScreenViews) {
             [UIViewController seg_swizzleViewDidAppear];
         }
@@ -173,7 +173,7 @@ NSString *const SEGBuildKeyV2 = @"SEGBuildKeyV2";
         @"version" : currentVersion ?: @"",
         @"build" : currentBuild ?: @"",
     }];
-    SEGLog(@"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+    SEGLog(@"-=-=-=-=-=-=-=-=-= ApplicationEnteredForeground");
 }
 
 
