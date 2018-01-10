@@ -173,6 +173,7 @@ NSString *const SEGBuildKeyV2 = @"SEGBuildKeyV2";
         @"version" : currentVersion ?: @"",
         @"build" : currentBuild ?: @"",
     }];
+    SEGLog(@"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 }
 
 
